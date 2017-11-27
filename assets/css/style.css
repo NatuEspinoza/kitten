@@ -8,14 +8,15 @@ Resetear el navegador y estilos generales
   padding: 0;
 }
 
-/* Kitten in the morning */
-.morning {
+body {
   width: 100%;
   height: auto;
   background-image: url(../img/sunny-day.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
+/* Kitten in the morning */
 #kitten1 {
   width: 30%;
   height: auto;
@@ -23,56 +24,51 @@ Resetear el navegador y estilos generales
 }
 
 /* Kitten in the afternoon */
-.afternoon {
-  width: 100%;
-  height: auto;
-  background-image: url(../img/dawn.png);
-  background-size: cover;
-  display: none;
-}
-
 #kitten2 {
   width: 70%;
   height: auto;
   margin: 200px 0 0 100px;
-}
-
-/* Kitten in the night */
-.night {
-  width: 100%;
-  height: auto;
-  background-image: url(../img/night.jpg);
-  background-size: cover;
   display: none;
 }
 
+/* Kitten in the night */
 #kitten3 {
   width: 70%;
   height: auto;
   margin: 200px 0 0 100px;
+  display: none;
 }
 
 /* Estilos según las dimensiones de la web */
 @media (min-width: 1001px) and (max-width: 1024px){
-  .morning {
+  body {
+    background-image: url(../img/sunny-day.jpg);
+  }
+  #kitten1 {
     display: block;
   }
 }
 
 @media (min-width: 684px) and (max-width: 1000px) {
-  .morning {
+  body {
+    background-image: url(../img/dawn.png);
+  }
+  #kitten1 {
     display: none;
   }
-  .afternoon {
+  #kitten2 {
     display: block;
   }
 }
 
-@media (min-width: 400px) and (max-width: 683px) and (min-height: 0px){
-  .morning {
+@media (min-width: 400px) and (max-width: 683px) {
+  body {
+    background-image: url(../img/night.jpg);
+  }
+  #kitten1 {
     display: none;
   }
-  .night {
+  #kitten3 {
     display: block;
   }
 }
