@@ -1,0 +1,78 @@
+/*
+Resetear el navegador y estilos generales
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Kitten in the morning */
+.morning {
+  width: 100%;
+  height: auto;
+  background-image: url(../img/sunny-day.jpg);
+  background-size: cover;
+}
+
+#kitten1 {
+  width: 30%;
+  height: auto;
+  margin: 500px 0 0 300px;
+}
+
+/* Kitten in the afternoon */
+.afternoon {
+  width: 100%;
+  height: auto;
+  background-image: url(../img/dawn.png);
+  background-size: cover;
+  display: none;
+}
+
+#kitten2 {
+  width: 70%;
+  height: auto;
+  margin: 200px 0 0 100px;
+}
+
+/* Kitten in the night */
+.night {
+  width: 100%;
+  height: auto;
+  background-image: url(../img/night.jpg);
+  background-size: cover;
+  display: none;
+}
+
+#kitten3 {
+  width: 70%;
+  height: auto;
+  margin: 200px 0 0 100px;
+}
+
+/* Estilos según las dimensiones de la web */
+@media (min-width: 1001px) and (max-width: 1024px){
+  .morning {
+    display: block;
+  }
+}
+
+@media (min-width: 684px) and (max-width: 1000px) {
+  .morning {
+    display: none;
+  }
+  .afternoon {
+    display: block;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 683px) and (min-height: 0px){
+  .morning {
+    display: none;
+  }
+  .night {
+    display: block;
+  }
+}
