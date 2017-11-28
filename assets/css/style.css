@@ -17,6 +17,7 @@ body {
 }
 
 /* Kitten in the morning */
+
 #kitten1 {
   width: 30%;
   height: auto;
@@ -24,6 +25,7 @@ body {
 }
 
 /* Kitten in the afternoon */
+
 #kitten2 {
   width: 70%;
   height: auto;
@@ -32,43 +34,10 @@ body {
 }
 
 /* Kitten in the night */
+
 #kitten3 {
   width: 70%;
   height: auto;
   margin: 200px 0 0 100px;
   display: none;
-}
-
-/* Estilos según las dimensiones de la web */
-@media (min-width: 1001px) and (max-width: 1024px){
-  body {
-    background-image: url(../img/sunny-day.jpg);
-  }
-  #kitten1 {
-    display: block;
-  }
-}
-
-@media (min-width: 684px) and (max-width: 1000px) {
-  body {
-    background-image: url(../img/dawn.png);
-  }
-  #kitten1 {
-    display: none;
-  }
-  #kitten2 {
-    display: block;
-  }
-}
-
-@media (min-width: 400px) and (max-width: 683px) {
-  body {
-    background-image: url(../img/night.jpg);
-  }
-  #kitten1 {
-    display: none;
-  }
-  #kitten3 {
-    display: block;
-  }
 }
